@@ -7,9 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="{% static 'css/base_styles.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Testing</h1>
+    <header>
+        <nav>
+            <div class="hamburger">
+                <img id="openham" class="icon" src ="{% static 'element/openham.svg'%}">
+                <img id="closeham" class="icon" src ="{%static 'element/closeham.svg'%}">
+            </div>
+            <div class="logo_box">
+                <img id="logo" src="{% static 'logo/main.svg'%}">
+            </div>
+            <div class="navigation-items">
+                <a href="">journal</a>
+                <a href="">todo</a>
+                <a href="">habit</a>
+            </div>
+
+            <div class="user-items">
+                <a href=""><img class="icon" src ="{% static 'element/notifications.svg'%}"></a>
+            </div>
+        </nav>
+    </header>
 	<script src="{% static 'js/base_script.js'%}"></script>
   </body>
 </html>
